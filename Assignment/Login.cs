@@ -14,5 +14,17 @@ namespace Assignment
         {
             InitializeComponent();
         }
+
+        private void regbt_Click(object sender, EventArgs e)
+        {
+            RegStep1 r = new RegStep1();
+            r.Show();
+            this.Hide();
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

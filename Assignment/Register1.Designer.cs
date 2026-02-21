@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-    partial class Register1
+    partial class RegStep1
     {
         /// <summary>
         ///  Required designer variable.
@@ -39,7 +39,7 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            button1 = new Button();
+            nxBt1 = new Button();
             label6 = new Label();
             SuspendLayout();
             // 
@@ -139,14 +139,15 @@
             label5.Text = "Birthdate";
             label5.Click += label5_Click;
             // 
-            // button1
+            // nxBt1
             // 
-            button1.Location = new Point(676, 404);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 11;
-            button1.Text = "Next";
-            button1.UseVisualStyleBackColor = true;
+            nxBt1.Location = new Point(676, 404);
+            nxBt1.Name = "nxBt1";
+            nxBt1.Size = new Size(112, 34);
+            nxBt1.TabIndex = 11;
+            nxBt1.Text = "Next";
+            nxBt1.UseVisualStyleBackColor = true;
+            nxBt1.Click += nxBt1_Click;
             // 
             // label6
             // 
@@ -158,13 +159,13 @@
             label6.TabIndex = 12;
             label6.Text = "Personal Information";
             // 
-            // Resgister1
+            // RegStep1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label6);
-            Controls.Add(button1);
+            Controls.Add(nxBt1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -176,7 +177,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Name = "Resgister1";
+            Name = "RegStep1";
             Text = "RegisterStep1";
             ResumeLayout(false);
             PerformLayout();
@@ -195,7 +196,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
+        private Button nxBt1;
         private Label label6;
     }
 }

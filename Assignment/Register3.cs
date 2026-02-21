@@ -8,11 +8,25 @@ using System.Windows.Forms;
 
 namespace Assignment
 {
-    public partial class Register3 : Form
+    public partial class RegStep3 : Form
     {
-        public Register3()
+        public RegStep3()
         {
             InitializeComponent();
+        }
+
+        private void FinBt_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
+
+        private void backBt_Click(object sender, EventArgs e)
+        {
+            RegStep2 d = new RegStep2();
+            d.Show();
+            this.Hide();
         }
     }
 }

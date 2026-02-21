@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
+            regbt = new Button();
             button2 = new Button();
             label2 = new Label();
             textBox1 = new TextBox();
@@ -47,14 +47,15 @@
             label1.TabIndex = 0;
             label1.Text = "Login Form";
             // 
-            // button1
+            // regbt
             // 
-            button1.Location = new Point(455, 293);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 1;
-            button1.Text = "Register";
-            button1.UseVisualStyleBackColor = true;
+            regbt.Location = new Point(455, 293);
+            regbt.Name = "regbt";
+            regbt.Size = new Size(112, 34);
+            regbt.TabIndex = 1;
+            regbt.Text = "Register";
+            regbt.UseVisualStyleBackColor = true;
+            regbt.Click += regbt_Click;
             // 
             // button2
             // 
@@ -108,10 +109,11 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(regbt);
             Controls.Add(label1);
             Name = "Login";
             Text = "Login";
+            FormClosing += Login_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,7 +121,7 @@
         #endregion
 
         private Label label1;
-        private Button button1;
+        private Button regbt;
         private Button button2;
         private Label label2;
         private TextBox textBox1;

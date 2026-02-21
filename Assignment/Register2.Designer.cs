@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-    partial class Register2
+    partial class RegStep2
     {
         /// <summary>
         /// Required designer variable.
@@ -37,8 +37,8 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            Nxbt2 = new Button();
+            BckBt1 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -122,31 +122,33 @@
             label5.TabIndex = 8;
             label5.Text = "Degree";
             // 
-            // button1
+            // Nxbt2
             // 
-            button1.Location = new Point(676, 404);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 9;
-            button1.Text = "Next";
-            button1.UseVisualStyleBackColor = true;
+            Nxbt2.Location = new Point(676, 404);
+            Nxbt2.Name = "Nxbt2";
+            Nxbt2.Size = new Size(112, 34);
+            Nxbt2.TabIndex = 9;
+            Nxbt2.Text = "Next";
+            Nxbt2.UseVisualStyleBackColor = true;
+            Nxbt2.Click += Nxbt2_Click;
             // 
-            // button2
+            // BckBt1
             // 
-            button2.Location = new Point(52, 404);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 10;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            BckBt1.Location = new Point(52, 404);
+            BckBt1.Name = "BckBt1";
+            BckBt1.Size = new Size(112, 34);
+            BckBt1.TabIndex = 10;
+            BckBt1.Text = "Back";
+            BckBt1.UseVisualStyleBackColor = true;
+            BckBt1.Click += BckBt1_Click;
             // 
-            // Register2
+            // RegStep2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(BckBt1);
+            Controls.Add(Nxbt2);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -156,7 +158,7 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Register2";
+            Name = "RegStep2";
             Text = "RegisterStep2";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
@@ -174,7 +176,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
-        private Button button2;
+        private Button Nxbt2;
+        private Button BckBt1;
     }
 }

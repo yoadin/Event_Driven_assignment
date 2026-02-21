@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Assignment
 {
-    public partial class Register2 : Form
+    public partial class RegStep2 : Form
     {
-        public Register2()
+        public RegStep2()
         {
             InitializeComponent();
         }
@@ -18,6 +18,20 @@ namespace Assignment
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BckBt1_Click(object sender, EventArgs e)
+        {
+            RegStep1 b = new RegStep1();
+            b.Show();
+            this.Hide();
+        }
+
+        private void Nxbt2_Click(object sender, EventArgs e)
+        {
+            RegStep3 c = new RegStep3();
+            c.Show();
+            this.Hide();
         }
     }
 }

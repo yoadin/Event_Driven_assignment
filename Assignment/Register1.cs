@@ -1,8 +1,8 @@
 namespace Assignment
 {
-    public partial class Register1 : Form
+    public partial class RegStep1 : Form
     {
-        public Register1()
+        public RegStep1()
         {
             InitializeComponent();
         }
@@ -10,6 +10,13 @@ namespace Assignment
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void nxBt1_Click(object sender, EventArgs e)
+        {
+            RegStep2 s = new RegStep2();
+            s.Show();
+            this.Hide();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-    partial class Register3
+    partial class RegStep3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            FinBt = new Button();
+            backBt = new Button();
             label2 = new Label();
             textBox1 = new TextBox();
             label3 = new Label();
@@ -49,23 +49,25 @@
             label1.TabIndex = 0;
             label1.Text = "Current Location";
             // 
-            // button1
+            // FinBt
             // 
-            button1.Location = new Point(676, 404);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 1;
-            button1.Text = "Finish";
-            button1.UseVisualStyleBackColor = true;
+            FinBt.Location = new Point(676, 404);
+            FinBt.Name = "FinBt";
+            FinBt.Size = new Size(112, 34);
+            FinBt.TabIndex = 1;
+            FinBt.Text = "Finish";
+            FinBt.UseVisualStyleBackColor = true;
+            FinBt.Click += FinBt_Click;
             // 
-            // button2
+            // backBt
             // 
-            button2.Location = new Point(22, 404);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 2;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            backBt.Location = new Point(22, 404);
+            backBt.Name = "backBt";
+            backBt.Size = new Size(112, 34);
+            backBt.TabIndex = 2;
+            backBt.Text = "Back";
+            backBt.UseVisualStyleBackColor = true;
+            backBt.Click += backBt_Click;
             // 
             // label2
             // 
@@ -118,7 +120,7 @@
             textBox3.Size = new Size(150, 31);
             textBox3.TabIndex = 8;
             // 
-            // Register3
+            // RegStep3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -129,10 +131,10 @@
             Controls.Add(label3);
             Controls.Add(textBox1);
             Controls.Add(label2);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(backBt);
+            Controls.Add(FinBt);
             Controls.Add(label1);
-            Name = "Register3";
+            Name = "RegStep3";
             Text = "RegisterStep3";
             ResumeLayout(false);
             PerformLayout();
@@ -141,8 +143,8 @@
         #endregion
 
         private Label label1;
-        private Button button1;
-        private Button button2;
+        private Button FinBt;
+        private Button backBt;
         private Label label2;
         private TextBox textBox1;
         private Label label3;
