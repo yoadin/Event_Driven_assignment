@@ -29,9 +29,17 @@ namespace Assignment
 
         private void Nxbt2_Click(object sender, EventArgs e)
         {
-            RegStep3 c = new RegStep3();
-            c.Show();
+            if(txtUni.Text == "" || txtDep.Text == "" || comboBoxDeg.Items == null || graduationYear.Value == 0)
+            {
+                MessageBox.Show("Please fill in all the fields.");
+                return;
+            }
+            
             this.Hide();
+            RegStep3 step3 = new RegStep3();
+            step3.ShowDialog();
+
+            this.Close();
         }
     }
 }

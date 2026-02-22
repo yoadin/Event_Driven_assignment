@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtfirstname = new TextBox();
+            txtGfname = new TextBox();
+            txtFatherName = new TextBox();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             dateTimePicker1 = new DateTimePicker();
@@ -41,28 +41,30 @@
             label5 = new Label();
             nxBt1 = new Button();
             label6 = new Label();
+            bckbtn1 = new Button();
+            progressBar1 = new ProgressBar();
             SuspendLayout();
             // 
-            // textBox1
+            // txtfirstname
             // 
-            textBox1.Location = new Point(235, 62);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 0;
+            txtfirstname.Location = new Point(235, 62);
+            txtfirstname.Name = "txtfirstname";
+            txtfirstname.Size = new Size(150, 31);
+            txtfirstname.TabIndex = 0;
             // 
-            // textBox2
+            // txtGfname
             // 
-            textBox2.Location = new Point(235, 181);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 1;
+            txtGfname.Location = new Point(235, 181);
+            txtGfname.Name = "txtGfname";
+            txtGfname.Size = new Size(150, 31);
+            txtGfname.TabIndex = 1;
             // 
-            // textBox3
+            // txtFatherName
             // 
-            textBox3.Location = new Point(235, 119);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 2;
+            txtFatherName.Location = new Point(235, 119);
+            txtFatherName.Name = "txtFatherName";
+            txtFatherName.Size = new Size(150, 31);
+            txtFatherName.TabIndex = 2;
             // 
             // radioButton1
             // 
@@ -89,6 +91,8 @@
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(235, 284);
+            dateTimePicker1.MaxDate = new DateTime(2026, 12, 25, 23, 59, 59, 0);
+            dateTimePicker1.MinDate = new DateTime(1930, 1, 1, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(300, 31);
             dateTimePicker1.TabIndex = 5;
@@ -159,11 +163,32 @@
             label6.TabIndex = 12;
             label6.Text = "Personal Information";
             // 
+            // bckbtn1
+            // 
+            bckbtn1.Location = new Point(24, 404);
+            bckbtn1.Name = "bckbtn1";
+            bckbtn1.Size = new Size(112, 34);
+            bckbtn1.TabIndex = 14;
+            bckbtn1.Text = "Back";
+            bckbtn1.UseVisualStyleBackColor = true;
+            bckbtn1.Click += bckbtn1_Click;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(235, 404);
+            progressBar1.Maximum = 3;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(150, 34);
+            progressBar1.TabIndex = 15;
+            progressBar1.Value = 1;
+            // 
             // RegStep1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(progressBar1);
+            Controls.Add(bckbtn1);
             Controls.Add(label6);
             Controls.Add(nxBt1);
             Controls.Add(label5);
@@ -174,9 +199,9 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtFatherName);
+            Controls.Add(txtGfname);
+            Controls.Add(txtfirstname);
             Name = "RegStep1";
             Text = "RegisterStep1";
             ResumeLayout(false);
@@ -185,9 +210,9 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtfirstname;
+        private TextBox txtGfname;
+        private TextBox txtFatherName;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private DateTimePicker dateTimePicker1;
@@ -198,5 +223,7 @@
         private Label label5;
         private Button nxBt1;
         private Label label6;
+        private Button bckbtn1;
+        private ProgressBar progressBar1;
     }
 }

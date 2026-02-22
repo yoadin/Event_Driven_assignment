@@ -32,11 +32,12 @@
             FinBt = new Button();
             backBt = new Button();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtCountry = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtCity = new TextBox();
+            txtSubCity = new TextBox();
+            progressBar1 = new ProgressBar();
             SuspendLayout();
             // 
             // label1
@@ -72,24 +73,24 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 10F);
             label2.Location = new Point(22, 70);
             label2.Name = "label2";
-            label2.Size = new Size(85, 28);
+            label2.Size = new Size(82, 28);
             label2.TabIndex = 3;
             label2.Text = "Country";
             // 
-            // textBox1
+            // txtCountry
             // 
-            textBox1.Location = new Point(192, 70);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 4;
+            txtCountry.Location = new Point(192, 70);
+            txtCountry.Name = "txtCountry";
+            txtCountry.Size = new Size(150, 31);
+            txtCountry.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 10F);
             label3.Location = new Point(22, 143);
             label3.Name = "label3";
             label3.Size = new Size(46, 28);
@@ -99,37 +100,47 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Segoe UI", 10F);
             label4.Location = new Point(22, 210);
             label4.Name = "label4";
-            label4.Size = new Size(159, 28);
+            label4.Size = new Size(155, 28);
             label4.TabIndex = 6;
             label4.Text = "Sub-City/Kebele";
             // 
-            // textBox2
+            // txtCity
             // 
-            textBox2.Location = new Point(192, 137);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 7;
+            txtCity.Location = new Point(192, 137);
+            txtCity.Name = "txtCity";
+            txtCity.Size = new Size(150, 31);
+            txtCity.TabIndex = 7;
             // 
-            // textBox3
+            // txtSubCity
             // 
-            textBox3.Location = new Point(192, 210);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 8;
+            txtSubCity.Location = new Point(192, 210);
+            txtSubCity.Name = "txtSubCity";
+            txtSubCity.Size = new Size(150, 31);
+            txtSubCity.TabIndex = 8;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(250, 404);
+            progressBar1.Maximum = 3;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(150, 34);
+            progressBar1.TabIndex = 9;
+            progressBar1.Value = 3;
             // 
             // RegStep3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(progressBar1);
+            Controls.Add(txtSubCity);
+            Controls.Add(txtCity);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtCountry);
             Controls.Add(label2);
             Controls.Add(backBt);
             Controls.Add(FinBt);
@@ -146,10 +157,11 @@
         private Button FinBt;
         private Button backBt;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtCountry;
         private Label label3;
         private Label label4;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtCity;
+        private TextBox txtSubCity;
+        private ProgressBar progressBar1;
     }
 }

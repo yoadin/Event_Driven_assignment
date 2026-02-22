@@ -14,9 +14,27 @@ namespace Assignment
 
         private void nxBt1_Click(object sender, EventArgs e)
         {
-            RegStep2 s = new RegStep2();
-            s.Show();
+            if(txtfirstname.Text == "" || txtFatherName.Text == "" || txtGfname.Text == ""){
+                MessageBox.Show("Please Fill in the the name Fields");
+                return;
+            }
+            if(dateTimePicker1.Value > DateTime.Now)
+            {
+                MessageBox.Show("Please Select a Valid Date of Birth");
+                return;
+            }
+            
             this.Hide();
+            RegStep2 step2 = new RegStep2();
+            step2.ShowDialog();
+            this.Close();
+        }
+
+        private void bckbtn1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
         }
     }
 }

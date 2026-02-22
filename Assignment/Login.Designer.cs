@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             regbt = new Button();
-            button2 = new Button();
+            btnLogin = new Button();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             label3 = new Label();
             SuspendLayout();
             // 
@@ -57,14 +57,15 @@
             regbt.UseVisualStyleBackColor = true;
             regbt.Click += regbt_Click;
             // 
-            // button2
+            // btnLogin
             // 
-            button2.Location = new Point(291, 293);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 2;
-            button2.Text = "Login";
-            button2.UseVisualStyleBackColor = true;
+            btnLogin.Location = new Point(291, 293);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(112, 34);
+            btnLogin.TabIndex = 2;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label2
             // 
@@ -75,20 +76,20 @@
             label2.TabIndex = 3;
             label2.Text = "UserName";
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(353, 126);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 4;
+            txtUsername.Location = new Point(353, 126);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(150, 31);
+            txtUsername.TabIndex = 4;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(353, 196);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 5;
+            txtPassword.Location = new Point(353, 196);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(150, 31);
+            txtPassword.TabIndex = 5;
             // 
             // label3
             // 
@@ -105,10 +106,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(label2);
-            Controls.Add(button2);
+            Controls.Add(btnLogin);
             Controls.Add(regbt);
             Controls.Add(label1);
             Name = "Login";
@@ -122,10 +123,10 @@
 
         private Label label1;
         private Button regbt;
-        private Button button2;
+        private Button btnLogin;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
         private Label label3;
     }
 }

@@ -17,9 +17,14 @@ namespace Assignment
 
         private void FinBt_Click(object sender, EventArgs e)
         {
-            Login l = new Login();
-            l.Show();
-            this.Hide();
+            if(txtCity.Text == "" || txtCountry.Text == "" || txtSubCity.Text
+                 == "")
+            {
+                MessageBox.Show("Please fill all the fields!");
+                return;
+            }
+            MessageBox.Show("Registration Completed Successfully!");
+            this.Close();
         }
 
         private void backBt_Click(object sender, EventArgs e)

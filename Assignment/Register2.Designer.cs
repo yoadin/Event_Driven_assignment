@@ -30,16 +30,17 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            numericUpDown1 = new NumericUpDown();
-            textBox2 = new TextBox();
+            txtUni = new TextBox();
+            comboBoxDeg = new ComboBox();
+            graduationYear = new NumericUpDown();
+            txtDep = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             Nxbt2 = new Button();
             BckBt1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            progressBar1 = new ProgressBar();
+            ((System.ComponentModel.ISupportInitialize)graduationYear).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -62,38 +63,38 @@
             label2.Text = "Department";
             label2.Click += label2_Click;
             // 
-            // textBox1
+            // txtUni
             // 
-            textBox1.Location = new Point(220, 108);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(182, 31);
-            textBox1.TabIndex = 2;
+            txtUni.Location = new Point(220, 108);
+            txtUni.Name = "txtUni";
+            txtUni.Size = new Size(182, 31);
+            txtUni.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxDeg
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Diploma", "Asscociate Degree(AA)", "Bachelor's Degree", "Master's Degree", "Doctoral Degree(PHD)" });
-            comboBox1.Location = new Point(220, 174);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
-            comboBox1.TabIndex = 3;
+            comboBoxDeg.FormattingEnabled = true;
+            comboBoxDeg.Items.AddRange(new object[] { "Diploma", "Asscociate Degree(AA)", "Bachelor's Degree", "Master's Degree", "Doctoral Degree(PHD)" });
+            comboBoxDeg.Location = new Point(220, 174);
+            comboBoxDeg.Name = "comboBoxDeg";
+            comboBoxDeg.Size = new Size(182, 33);
+            comboBoxDeg.TabIndex = 3;
             // 
-            // numericUpDown1
+            // graduationYear
             // 
-            numericUpDown1.Location = new Point(220, 246);
-            numericUpDown1.Maximum = new decimal(new int[] { 2050, 0, 0, 0 });
-            numericUpDown1.Minimum = new decimal(new int[] { 1950, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(180, 31);
-            numericUpDown1.TabIndex = 4;
-            numericUpDown1.Value = new decimal(new int[] { 1950, 0, 0, 0 });
+            graduationYear.Location = new Point(220, 246);
+            graduationYear.Maximum = new decimal(new int[] { 2050, 0, 0, 0 });
+            graduationYear.Minimum = new decimal(new int[] { 1950, 0, 0, 0 });
+            graduationYear.Name = "graduationYear";
+            graduationYear.Size = new Size(180, 31);
+            graduationYear.TabIndex = 4;
+            graduationYear.Value = new decimal(new int[] { 1950, 0, 0, 0 });
             // 
-            // textBox2
+            // txtDep
             // 
-            textBox2.Location = new Point(220, 316);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(182, 31);
-            textBox2.TabIndex = 5;
+            txtDep.Location = new Point(220, 316);
+            txtDep.Name = "txtDep";
+            txtDep.Size = new Size(182, 31);
+            txtDep.TabIndex = 5;
             // 
             // label3
             // 
@@ -142,25 +143,35 @@
             BckBt1.UseVisualStyleBackColor = true;
             BckBt1.Click += BckBt1_Click;
             // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(252, 404);
+            progressBar1.Maximum = 3;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(150, 34);
+            progressBar1.TabIndex = 11;
+            progressBar1.Value = 2;
+            // 
             // RegStep2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(progressBar1);
             Controls.Add(BckBt1);
             Controls.Add(Nxbt2);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(numericUpDown1);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(txtDep);
+            Controls.Add(graduationYear);
+            Controls.Add(comboBoxDeg);
+            Controls.Add(txtUni);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "RegStep2";
             Text = "RegisterStep2";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)graduationYear).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,14 +180,15 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private NumericUpDown numericUpDown1;
-        private TextBox textBox2;
+        private TextBox txtUni;
+        private ComboBox comboBoxDeg;
+        private NumericUpDown graduationYear;
+        private TextBox txtDep;
         private Label label3;
         private Label label4;
         private Label label5;
         private Button Nxbt2;
         private Button BckBt1;
+        private ProgressBar progressBar1;
     }
 }
